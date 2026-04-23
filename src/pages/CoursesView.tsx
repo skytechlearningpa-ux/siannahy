@@ -4,11 +4,22 @@ import { ImageWithFallback } from "../components/ui/image-with-fallback";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
 import { useLanguage } from "../context/LanguageContext";
+import { Helmet } from "react-helmet-async";
 
 export function CoursesView() {
   const { t } = useLanguage();
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyan-400 via-cyan-300 to-teal-400 py-12 sm:py-16">
+      <Helmet>
+        <title>Cursos de Inglés - Siannah Yánguez</title>
+        <meta property="og:title" content="Cursos de Inglés - Siannah Yánguez" />
+        <meta property="og:description" content="Inscríbete en nuestros cursos de inglés básico conversacional. ¡Habla desde el día 1 con una metodología práctica y dinámica!" />
+        <meta property="og:image" content="https://siannahy.com/imagenes/Ynsy.png" />
+        <meta property="og:url" content="https://siannahy.com/cursos" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://siannahy.com/imagenes/Ynsy.png" />
+      </Helmet>
 
       <div className="max-w-7xl mx-auto px-6">
 

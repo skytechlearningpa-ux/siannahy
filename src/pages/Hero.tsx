@@ -3,6 +3,7 @@ import { ImageWithFallback } from "../components/ui/image-with-fallback";
 import { motion } from "framer-motion";
 import { BookOpen, Award, Globe } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { Helmet } from "react-helmet-async";
 
 export function Hero() {
   const { t } = useLanguage();
@@ -14,6 +15,16 @@ export function Hero() {
 
   return (
     <PageTransition>
+      <Helmet>
+        <title>Siannah Yánguez - Dra. en Inglés</title>
+        <meta property="og:title" content="Siannah Yánguez - Dra. en Inglés" />
+        <meta property="og:description" content="Servicios profesionales de traducción, enseñanza de inglés y consultoría académica." />
+        <meta property="og:image" content="https://siannahy.com/imagenes/siannah-portrait.jpeg" />
+        <meta property="og:url" content="https://siannahy.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://siannahy.com/imagenes/siannah-portrait.jpeg" />
+      </Helmet>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
         {/* Background */}
