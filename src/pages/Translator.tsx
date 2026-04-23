@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Languages, FileText, CheckCircle, Clock, Award, MapPin } from "lucide-react";
 import { PageTransition } from "../components/PageTransition";
-import { ImageWithFallback } from "../components/ui/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/image-with-fallback";
 import { useLanguage } from "../context/LanguageContext";
 
 const services = [

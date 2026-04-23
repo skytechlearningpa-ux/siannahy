@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Users, BookOpen, Target } from "lucide-react";
 
-import { ImageWithFallback } from "../components/ui/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/image-with-fallback";
 import { PageTransition } from "../components/PageTransition";
 import { useLanguage } from "../context/LanguageContext";
 

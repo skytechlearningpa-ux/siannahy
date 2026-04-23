@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Award, Users, Heart, Briefcase, Calendar } from "lucide-react";
 import { PageTransition } from "../components/PageTransition";
-import { ImageWithFallback } from "../components/ui/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/image-with-fallback";
 import { useLanguage } from "../context/LanguageContext";
 
 const experiences = [
