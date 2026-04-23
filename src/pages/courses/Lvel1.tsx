@@ -1,6 +1,6 @@
 import { Clock, MessageCircle, Lock, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 type Level = {
   id: number;

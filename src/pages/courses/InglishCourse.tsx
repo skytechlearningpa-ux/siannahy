@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, MessageCircle, Users, Calendar, Video, Sparkles, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
-import { ImageWithFallback } from "../../components/ui/ImageWithFallback";
+import { ImageWithFallback } from "../../components/ui/image-with-fallback";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
-import { Progress } from "../../components/ui/Progress";
+import { Progress } from "../../components/ui/progress";
 import { InscriptionModal } from "../../components/InscriptionModal";
 import { useState } from "react";
 

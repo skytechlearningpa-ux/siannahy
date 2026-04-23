@@ -6,19 +6,11 @@ import { useLanguage } from "../context/LanguageContext";
 import { Language } from "../i18n/translations";
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
   const { language, setLanguage, t } = useLanguage();
   const location = useLocation();
-  const isHomePage = location.pathname === "/";
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);

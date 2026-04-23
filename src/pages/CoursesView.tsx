@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { GraduationCap, ArrowRight, Users, Globe } from "lucide-react";
-import { ImageWithFallback } from "../components/ui/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/image-with-fallback";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
 import { useLanguage } from "../context/LanguageContext";
